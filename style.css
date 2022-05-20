@@ -52,7 +52,19 @@
     width: 100px;
     height: 100px;
     background: red;
+    animation: vanish 5s linear 5s;
 }
+
+@keyframes vanish {
+    100% {opacity: 0%}
+    0% { opacity: 100%}
+}
+
+
+
+/*Esercizio 5*/
+
+
 .ex-5-square {
     margin: 20px;
     width: 60px;
