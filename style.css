@@ -152,10 +152,18 @@
 
 
 
-/**/
+/*Esercizio 11*/
 .ex-11-icon {
     font-size: 60px;
+    transition: transform 2s linear    ;
 }
+
+.ex-11-icon:hover {
+    transform: rotate(270deg);
+    transition: transform 5s linear
+    
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
