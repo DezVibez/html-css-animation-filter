@@ -1,4 +1,3 @@
-
 /*Esercizio 1*/
 
 
@@ -56,8 +55,13 @@
 }
 
 @keyframes vanish {
-    100% {opacity: 0%}
-    0% { opacity: 100%}
+    100% {
+        opacity: 0%
+    }
+
+    0% {
+        opacity: 100%
+    }
 }
 
 
@@ -86,7 +90,9 @@
 
 /*Esercizio 6*/
 
-.ex-6-img {width: 500px;}
+.ex-6-img {
+    width: 500px;
+}
 
 .ex-6-img:hover {
     filter: grayscale(100%);
@@ -100,8 +106,13 @@
 }
 
 @keyframes filtri {
-    0% {filter: sepia(0) brightness(0x);}
-    100% {filter: sepia(100%) brightness(100%);}
+    0% {
+        filter: sepia(0) brightness(0x);
+    }
+
+    100% {
+        filter: sepia(100%) brightness(100%);
+    }
 }
 
 /*Esercizio 8*/
@@ -112,12 +123,23 @@
 }
 
 @keyframes effettoni {
-    0% {filter: sepia(0) brightness(0x)}
-    100% {filter: sepia(100%) brightness(100%);}
-    0% {border-radius: 0;}
-    100% {border-radius: 50%;}
-    
-    
+    0% {
+        filter: sepia(0) brightness(0x)
+    }
+
+    100% {
+        filter: sepia(100%) brightness(100%);
+    }
+
+    0% {
+        border-radius: 0;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+
+
 }
 
 /*Esercizio 9*/
@@ -129,39 +151,60 @@
 }
 
 @keyframes effettazzi {
-    0% {filter: sepia(0) brightness(0x)}
-    100% {filter: sepia(100%) brightness(100%);}
-    0% {border-radius: 0;}
-    100% {border-radius: 50%;}
-    0% {transform: scale(1);}
-    100% {transform: scale(1.5);}
+    0% {
+        filter: sepia(0) brightness(0x)
+    }
+
+    100% {
+        filter: sepia(100%) brightness(100%);
+    }
+
+    0% {
+        border-radius: 0;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 /*Esercizio 10*/
 .ex-10-icon {
     font-size: 60px;
-    animation: rotate 1.5s linear infinite; 
+    animation: rotate 1.5s linear infinite;
 }
 
-@keyframes rotate{
-    0% {transform: rotate(0deg);}
-  100%{ transform: rotate(360deg); }
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-   
+
 
 
 
 /*Esercizio 11*/
 .ex-11-icon {
     font-size: 60px;
-    transition: transform 2s linear    ;
+    transition: transform 2s linear;
 }
 
 .ex-11-icon:hover {
     transform: rotate(270deg);
     transition: transform 5s linear
-    
 }
 
 /*Esercizio 12*/
@@ -178,10 +221,10 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
-    
+
 }
 
-.ex-12-top-white{
+.ex-12-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
@@ -189,16 +232,21 @@
     width: 60px;
     height: 20px;
     animation: girare 5s linear infinite;
-    
+
 }
 
 @keyframes girare {
-    0% {top: -10px;
-    left: 10%;}
-    100% {top: -10px;
-        left: 60%;}
-  
-    
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    100% {
+        top: -10px;
+        left: 60%;
+    }
+
+
 }
 
 .ex-12-bottom-white {
@@ -212,12 +260,17 @@
 }
 
 @keyframes girava {
-    0% {bottom: -10px;
-    right: 20%;}
-    100% {bottom: -10px;
-        right: 60%;}
- 
-    
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 60%;
+    }
+
+
 }
 
 /*Esercizio 13*/
@@ -235,53 +288,92 @@
     text-align: center;
     text-decoration: none;
 }
+
 .ex-13-top-white {
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 0%;
     background: #f70101;
     width: 60px;
     height: 20px;
-    animation: girotondo 5s linear infinite;
-    translate: (-50%, -50%);
+    animation: girotondo 10s linear infinite;
+    transform: translatex(-50%) translateY(-50%)
 }
 
 @keyframes girotondo {
-0% {top:0%;
-    left:0%;
-    
+    0% {
+        top: 0%;
+        left: 0%;
     }
 
-25% {top: 0%;
-    left:100%;
-    
+    25% {
+        top: 0%;
+        left: 100%;
+        transform: translatex(-50%) translateY(-50%)
+    }
 
-   
-     }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translatex(-50%) translateY(-50%)
+    }
 
-50% {top: 100%;
-    left:100%;
-   
-     }
+    75% {
+        top: 100%;
+        left: 0%;
+        transform: translatex(-50%) translateY(-50%)
+    }
+    100% {
+        top: 0%;
+        left: 0%;
+        transform: translatex(-50%) translateY(-50%)
 
-75% {top: 100%;
-    left:0%;
-    
-     }
-
-100%   {
-    top:0px;
-    left:0%;
-     }
+    }
 }
 
 
 
 .ex-13-bottom-white {
     position: absolute;
-    bottom: -10px;
-    right: 20%;
-    background: #f5f5f5;
+    bottom: 0%;
+    right: 0%;
+    background: #1904fb;
     width: 60px;
     height: 20px;
+    transform: translatex(50%) translateY(50%);
+    animation: giroquadrato 10s linear infinite;
+
+
+}
+
+@keyframes giroquadrato {
+    0% {
+        bottom: 0%;
+        right: 0%;
+        transform: translatex(50%) translateY(50%)
+    }
+
+    25% {
+        bottom: 0%;
+        right: 100%;
+        transform: translatex(50%) translateY(50%)
+    }
+
+    50% {
+        bottom: 100%;
+        right: 100%;
+        transform: translatex(50%) translateY(50%)
+    }
+
+    75% {
+        bottom: 100%;
+        right: 0%;
+        transform: translatex(50%) translateY(50%)
+    }
+    100% {
+        bottom: 0%;
+        right: 0%;
+        transform: translatex(50%) translateY(50%)
+
+    }
 }
