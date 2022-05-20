@@ -38,6 +38,16 @@
     height: 100px;
     background: red;
 }
+
+.ex-3-square:hover {
+    transition: border-radius 5s linear;
+    border-radius: 50%;
+}
+
+
+/*Esercizio 4*/
+
+
 .ex-4-square {
     width: 100px;
     height: 100px;
