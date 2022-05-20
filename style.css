@@ -11,7 +11,7 @@
 
 .ex-1-square:hover {
     background-color: red;
-    transition: background-color 5s linear
+    transition: background-color 5s linear;
 }
 
 /*Esercizio 2*/
@@ -21,6 +21,18 @@
     height: 100px;
     background: red;
 }
+
+.ex-2-square:hover {
+    transition: width 5s linear;
+    width: 600px;
+    height: 100px;
+    background: red;
+}
+
+
+
+
+/*Esercizio 3*/
 .ex-3-square {
     width: 100px;
     height: 100px;
