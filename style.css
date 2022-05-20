@@ -104,20 +104,26 @@
     100% {filter: sepia(100%) brightness(100%);}
 }
 
+/*Esercizio 8*/
 
-
-
-
-
-
-
-
-
-
-
-.ex-7-img, .ex-8-img {
+.ex-8-img {
     width: 500px;
+    animation: effettoni 5s linear 5s;
 }
+
+@keyframes effettoni {
+    0% {filter: sepia(0) brightness(0x)}
+    100% {filter: sepia(100%) brightness(100%);}
+    0% {border-radius: 0;}
+    100% {border-radius: 50%;}
+    0% {transform: scale(1);}
+    100% {transform: scale(1.5);}
+}
+
+
+
+
+/**/
 
 .ex-9-img {
     margin: 50px 100px;
